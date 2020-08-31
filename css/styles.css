@@ -234,9 +234,10 @@ a {
     .totalCard {
         display: block;
         margin:10% 5%;
+        width:90%;
     }
     .projectName,.projectDescription{
-        width:90%;
+        width:100%;
     }
     .projectDescription{
         border-left: 1px solid #F05530;
