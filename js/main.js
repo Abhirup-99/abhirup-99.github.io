@@ -65,20 +65,26 @@ $(document).ready(function () {
     }
     // If element is scrolled into view, fade it in
     $(window).scroll(function () {
-        $('.about-me').each(function () {
-            if (isScrolledIntoView(this) === true) {
-                $(this).addClass('animate__backInLeft');
-            }
-        });
-        $('.leftIn').each(function () {
-            if (isScrolledIntoView(this) === true) {
-                $(this).addClass('animate__backInLeft');
-            }
-        });
-        $('.RightIn').each(function () {
-            if (isScrolledIntoView(this) === true) {
-                $(this).addClass('animate__backInRight');
-            }
-        });
+        isMobile = false;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            isMobile = true;
+           }
+        if(!isMobile){
+            $('.about-me').each(function () {
+                if (isScrolledIntoView(this) === true) {
+                    $(this).addClass('animate__backInLeft');
+                }
+            });
+            $('.leftIn').each(function () {
+                if (isScrolledIntoView(this) === true) {
+                    $(this).addClass('animate__backInLeft');
+                }
+            });
+            $('.RightIn').each(function () {
+                if (isScrolledIntoView(this) === true) {
+                    $(this).addClass('animate__backInRight');
+                }
+            });    
+        }
     });
 });
