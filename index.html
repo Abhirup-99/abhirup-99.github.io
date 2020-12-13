@@ -44,239 +44,193 @@ or reproduced from the open source public code.
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Abhirup Pal</title>
+	<meta name="keywords" content="Abhirup, abhirup-99,Abhirup Pal" />
+	<meta name="author" content="Abhirup Pal" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
     <meta name="description" content="A Tech-Enthusiast passionate about Developing softwares.">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Person",
+            "id":"",
+            "name":"Abhirup Pal",
+            "email":"abhiruppal9051323282@gmail.com",
+            "url":"https://abhirup-99.github.io/"
+        }
+    </script>
     </link>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="">
-                <img class="logo" src="images/Logo.svg" alt="AbhirupPal">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutContainer">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
+    <div class="body-container">
+        <div class="sidebar-container">
+            <div class="sidebar-content-container">
+                <div class="sidebar-image-container">
+                    <img src="images/profile.png" alt="Profile Image">
+                    <h1>Abhirup Pal</h1>
+                    <h4>Software Developer</h4>
+                </div>
+                <br>
+                <div class="sidebar-section-links">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#experience" data-nav-section="experience">Experience</a></li>
+						<li><a href="#skills" data-nav-section="skills">Skills</a></li>
+						<li><a href="#contributions" data-nav-section="contributions">Contributions</a></li>
+						<li><a href="#projects" data-nav-section="projects">Projects</a></li>
+						<li><a href="#blog" data-nav-section="blog">Blog</a></li>
+					</ul>
+                </div>
+                <div class="sidebar-social-links">
+					<ul>
+						<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/abhiruppal99/"><img src="images/linkedinLogo.png" alt="LinkedIn Logo" style="width: 30px;"></a></li>
+						<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Abhirup-99"><img src="images/GitHubLogo.png" alt="Github Logo"></li>
+						<li><a target="_blank" rel="noopener noreferrer" href="mailto:abhiruppalmethodist@gmail.com"><img src="images/Gmail-01.svg" alt="Gmail Logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-body-container">
+            <section id="home" class="body-section">
+                <h1 style="margin-top: 0.2em;">Hi! </h1>
+                <h1 style="margin-bottom: 0.2em;">I'm Abhirup</h1>
+                <div class="inline-container">
+                    <h3>Software Developer | Open Source contributor
+                    <img src="images/map-marker-alt-solid.svg" alt="position">
+                    India</h3>    
+                </div>
+                <p>
+                    I am a budding Software Developer currently pursing my Bachelor's degree in 
+                    Electronics and Communication Engineering from IEM, Kolkata. My area of 
+                    interest lie in web development, and python programming. I am an open source 
+                    developer contributing in multiple FOSS projects,like zulip, openMF, 
+                    internet archive.
+                </p>
+                <a target="_blank" href="AbhirupPalResume.pdf">Download CV <img src="images/arrow-down-solid.svg" alt="Download CV"></a>
+            </section>
+            <section id="experience" class="body-section">
+                <h2>Experience</h2>
+                <div id="announce" class="experience-card">
+                    <img src="images/announceScreenshot.png" alt="Announce" style="height: 250px;">
+                    <div class="text-content">
+                        <a href="https://announce.today/"><h2>Goalstar</h2></a> 
+                        <ul>
+                            <li><span class="bold">Led the entire team</span> in the migration of the website from pure Javascript to Angular.</li>
+                            <li>Added <span class="bold">debouncing</span> to reduce api calls.Implemented <span class="bold">server-side loading</span> and <span class="bold">lazy loading</span> to speed it up</li>
+                            <li>Created scraping platform and consumed apis like Eventbrite and TicketMaster.</li>
+                            <li>Created rest apis.</li>
+                            <li><span class="bold">Tech Stack</span>:  Python, Javascript,Angular, Firebase, Google Cloud Platform, Git, Agile Tool(Jira).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="patron" class="experience-card">
+                    <img src="images/patronScreenshot.png" alt="Goalstar">
+                    <div class="text-content">
+                        <a href="https://patronaccounting.com/"><h2>Patron Accounting</h2></a> 
+                        <ul>
+                            <li>Created the <span class="bold">entire website from scratch. Automated document creation</span> using PhpWord.</li>
+                            <li>Improved the <span class="bold">speed</span> of the website <span class="bold">2x</span> over the existing one.</span></li>
+                            <li><span class="bold">Tech Stack</span>: : Html5 Css3 Javascript Php.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="goalstar" class="experience-card">
+                    <img src="images/goalstarScreenshot.png" alt="Goalstar">
+                    <div class="text-content">
+                        <a href="https://goalstar.tv/"><h2>Goalstar</h2></a> 
+                        <ul>
+                            <li>Created the <span class="bold">entire frontend ui.</span></li>
+                            <li>Worked on implementing the <span class="bold">PayTm business payment api.</span></li>
+                            <li><span class="bold">Tech Stack</span>: Django Html Css Bootstrap Javascript.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="body-section">
+                <h2>Skills</h2>
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>NodeJs</li>
+                    <li>Typescript</li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="headWelcome">
-        <div class="text-wrapper" style="padding-top:10vh">
-            <br>
-            <img class="img-thumbnail" src="images/profile.png" alt="">
-            <h1 id="name" class="centerEl animate__animated animate__bounce">Abhirup Pal</h1>
-        </div>
-        <div class="text-wrapper">
-            <h1 class="centerEl typewrite" data-period="3000"
-                data-type='[ " a Web Developer."," a Competitive Programmer.", " an Avid Reader." ]'>
-                <span class="wrap"></span>
-            </h1>
-        </div>
-    </header>
-    <div class="container about-me animate__animated">
-        <div id="aboutContainer">
-            <h2 class="text-uppercase text-center font-weight-bold" style="color:#F05530">About me</h2>
-            <p>Happy to learn and evolve over time,I am pretty much an over enthusiastic over any new tech.
-                I am currently pursuing my undergrad in ECE from IEM,Kolkata and is open to new technological
-                challenges. I am an avid reader,specially anything history or geopolitics.</p>
-            <h5 class="text-center font-weight-bold" style="color:#F05530">Follow me on</h5>
-            <div class="img-wrapper">
-                <a target="_blank" href="https://www.linkedin.com/in/abhiruppal99/">
-                    <img class="socialLogo" src="images/linkedinLogo.png" alt="Linkedin profile">
-                </a>
-                <a target="_blank" href="https://github.com/Abhirup-99">
-                    <img class="socialLogo" src="images/GitHubLogo.png" alt="Github profile">
-                </a>
-                <a target="_blank" href="https://github.com/Abhirup-99/Abhirup-portfolio/blob/master/AbhirupPalResume.pdf">
-                    <img class="socialLogo" src="images/curriculum.svg" alt="Resume">
-                </a>
-
-            </div>
-        </div>
-    </div>
-    <div class="container portfolio" id="portfolio">
-        <h2 class="text-uppercase text-center font-weight-bold" style="color:#F05530">Portfolio</h2>
-        <div class="totalCard animate__animated leftIn">
-            <div class="projectName">
-                <div class="text-wrapper">
-                    <h5>Personal Assistant</h5>
-                    <p>February 2019</p>
-                </div>
-            </div>
-            <div class="projectDescription">
-                <p>Made a web based chatbot using DuckduckGo api.</p>
-            </div>
-        </div>
-        <div class="totalCard animate__animated RightIn">
-            <div class="projectName">
-                <div class="text-wrapper">
-                    <h5>Multithreaded Crawler</h5>
-                    <p>january 2019</p>
-                </div>
-            </div>
-            <div class="projectDescription">
-                <p>Python crawler to scrape links.</p>
-            </div>
-        </div>
-        <div class="totalCard animate__animated leftIn">
-            <div class="projectName">
-                <div class="text-wrapper">
-                    <h5>Desktop Wallpaper Changer</h5>
-                    <p>June 2020</p>
-                </div>
-            </div>
-            <div class="projectDescription">
-                <p>Wrote a Python script to change wallpaper daily.</p>
-            </div>
-        </div>
-        <div class="totalCard animate__animated RightIn">
-            <div class="projectName">
-                <div class="text-wrapper">
-                    <h5>Automated Error Reporting</h5>
-                    <p>August 2020</p>
-                </div>
-            </div>
-            <div class="projectDescription">
-                <p>Automated error reporting from Gcloud with Jira and Github apis.</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="container experience">
-        <h2 class="text-uppercase text-center font-weight-bold" style="color:#F05530">Work Experience</h2>
-        <div class="rowBox" id="experience">
-            <div class="card animate__animated leftIn">
-                <img class="card-img-top" src="images/goalstarScreenshot.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Goalstar</h4>
-                    <p class="card-text">Worked on Frontend and intregated Paytm Gateway.</p>
-                    <a target="_blank" href="https://goalstar.tv/" class="btn btn-primary stretched-link">See
-                        Website</a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="images/announceScreenshot.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Announce</h4>
-                    <p class="card-text">Worked on complete website, FE and BE and made scraping scripts.</p>
-                    <a target="_blank" href="https://announce.today/" class="btn btn-primary stretched-link">See
-                        Website</a>
-                </div>
-            </div>
-            <div class="card animate__animated RightIn">
-                <img class="card-img-top" src="images/patronScreenshot.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Patron Accounting</h4>
-                    <p class="card-text">Worked on complete website,and added
-                        automatic document generation using PHPWord.</p>
-                    <a target="_blank" href="https://www.patronaccounting.com/"
-                        class="btn btn-primary stretched-link text-center">See
-                        Website</a>
-                </div>
-            </div>
-
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>Angular</li>
+                    <li>Flask</li>
+                    <li>Express</li>
+                </ul>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Google Cloud Platform</li>
+                    <li>Git</li>
+                </ul>
+                <h3>Databases</h3>
+                <ul>
+                    <li>Firebase</li>
+                    <li>MySql</li>
+                    <li>PostgresSql</li>
+                </ul>
+            </section>
+            <section id="contributions" class="body-section">
+                <h2>Open Source Contributions</h2>
+                <p>I have been maintaining a small angular library <a href="https://www.npmjs.com/package/ng2-animate-on-scroll">ng2-animate-on-scroll</a>, an angular directive module
+                to load animations on scrolling, and in the process of pushing another one to detect "good" crawlers
+                based on user agents.</p>  
+                <p>In addition to this, I have been contributing to various open source organizations. Below is the list of organizations,
+                    I have been contributing in:
+                </p>
+                <ul>
+                    <li>&#9673; <a href="https://github.com/openMF/web-app/">OpenMF/webapp</a> - <a href="https://github.com/openMF/web-app/commits?author=Abhirup-99">Issues merged</a> and <a href="https://github.com/openMF/web-app/pulls/Abhirup-99">prs ready for review</a></li>
+                    <li>&#9673; <a href="https://github.com/zulip/zulip-terminal/">Zulip/terminal</a> - <a href="https://github.com/zulip/zulip-terminal/commits?author=Abhirup-99">Issues merged</a> and <a href="https://github.com/zulip/zulip-terminal/pulls/Abhirup-99">prs ready for review.</a></li>
+                    <li>&#9673; <a href="https://github.com/internetarchive/openlibrary/">Internet Archive</a> - <a href="https://github.com/internetarchive/openlibrary/commits?author=Abhirup-99">Issues merged</a></li>
+                </ul>    
+            </section>
+            <section id="projects" class="body-section">
+                <h2>Projects</h2>
+                <p>Listed below are some projects I have had an opportunity to work on, either as a course project or just for fun. 
+                    I have tried hosting their code on GitHub as well.</p>
+                <ul>
+                    <li>&#9673; <a href="https://github.com/Abhirup-99/DesktopWallpaper">Automatic Desktop Wallpaper Changer</a> - A combination of bash script and python to change your wallpaper daily.</li>
+                    <li>&#9673; <a href="https://github.com/Abhirup-99/gmail-cleaner">Gmail Cleaner</a> - An Appscript script which runs once a day and cleans up your email.</li>
+                    <li>&#9673; <a href="https://github.com/Abhirup-99/scraper">Link Scraper</a> - A python based link scraper for scraping all the links from a website.</li>
+                    <li>&#9673;<a href="https://github.com/Abhirup-99/tkinter_projects">Tkinter GUI Demos</a> - Various GUI applications made in tkinter.(e.g: Calculator,Notepad, Drawing App)</li>
+                    <li>&#9673;  <a href="https://github.com/Abhirup-99/chat-application">Chat application</a> - A Socket.io based chat room application.</li>
+                    <li>&#9673;ProductivityX - A Chrome extension to change your wallpaper daily, have collections, bookmarks and much more (Coming soon).</li>
+                </ul>
+            </section>
+            <section id="blog" class="body-section">
+                <p>Coming Soon</p>
+            </section>
+            <footer class="footer">
+                <p class="text-center">Made with &#10084;&#65039; by <span style="font-weight: bold;">Abhirup Pal</span>
+                    <br>
+                    Feel free to copy.
+                    <br>
+                    No rights reserved.
+                </p>
+            </footer>        
         </div>
     </div>
-    <div class="container skills" id="skills">
-        <h2 class="text-uppercase text-center font-weight-bold" style="color:#F05530">Skills</h2>
-        <div class="row">
-            <div class="skillContainer">
-                <h5>Python</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>Javascript</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>GCP</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>HTML5</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>CSS3</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>Django</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>Angular</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>React</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5>Firebase</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-            <div class="skillContainer">
-                <h5 style="color:#F05530">Flask</h5>
-                <div class="progress">
-                    <div class="progress-bar" style="width:100%">100%</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <footer class="footer">
-        <p class="text-center">Made with &#10084;&#65039; by <span style="font-weight: bold;">Abhirup Pal</span>
-            <br>
-            Feel free to copy.
-            <br>
-            No rights reserved.
-        </p>
-    </footer>
 </body>
 
 </html>
