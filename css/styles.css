@@ -8,7 +8,7 @@ body {
     font-family: "Quicksand", Arial, sans-serif;
     color: var(--font-color);
     background-color: var(--background-color);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .body-container {
@@ -18,9 +18,12 @@ body {
     flex-direction: row;
     height: 100vh;
 }
-#experience{
+
+#experience {
     height: fit-content;
+    margin-bottom: 30vh;
 }
+
 .sidebar-container {
     width: 30vw;
     text-align: center;
@@ -69,25 +72,30 @@ body {
     color: var(--font-color);
 }
 
-.sidebar-section-links ul,.sidebar-social-links ul {
+.sidebar-section-links ul,
+.sidebar-social-links ul {
     list-style-type: none;
     padding: 0;
 }
-.sidebar-social-links ul{
+
+.sidebar-social-links ul {
     display: flex;
     flex-direction: row;
     width: fit-content;
     margin: 0 auto;
 }
+
 .sidebar-section-links li {
     margin: 0.5em auto;
     font-size: 1.1em;
 }
-.sidebar-social-links>ul>li>a>img{
+
+.sidebar-social-links>ul>li>a>img {
     width: 25px;
     height: 25px;
     margin: 10px 20px;
 }
+
 .sidebar-section-links li a {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
@@ -133,47 +141,62 @@ body {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-.body-section{
+
+.body-section {
     padding: 1em;
     padding-left: 2em;
     height: fit-content;
     height: 95vh;
 }
-#home>h1{
+
+#home>h1 {
     font-size: 4.5em;
-    margin: 0.5em auto;
+    margin: 0 auto;
 }
-#home>.inline-container>h3>img{
+
+#home>.inline-container>span>img {
     height: 15px;
     width: 15px;
-    margin-left: 300px;
+    align-self: center;
 }
-.inline-container{
-    width: 70vw;
+
+.inline-container {
+    width: 100%;
+    display: flex;
 }
-.inline-container h3{
+
+.inline-container h3 {
     margin: 0;
     font-weight: 400;
 }
-#home p{
+
+.inline-container span {
+    margin-left: auto;
+    display: flex;
+}
+
+#home p {
     font-size: 1.2em;
     line-height: 1.4em;
     text-align: justify;
     margin-bottom: 2em;
 }
-#home a{
+
+#home a {
     text-decoration: none;
-    color:var(--font-color);
+    color: var(--font-color);
     border: 1px solid var(--font-color);
     padding: 10px 20px;
     font-size: 1.5em;
     margin: 25px 0;
 }
-#home>a>img{
+
+#home>a>img {
     height: 15px;
     width: 15px;
 }
-#experience .experience-card{
+
+#experience .experience-card {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -181,59 +204,211 @@ body {
     background-color: var(--sidebar-background-color);
     margin: 20px 0;
 }
-.experience-card img{
+
+.experience-card img {
     width: 250px;
     height: auto;
 }
-.experience-card .text-content{
+
+.experience-card .text-content {
     padding: 0 20px;
 }
-.text-content a{
+
+.text-content a {
     text-decoration: none;
 }
-.text-content h2{
+
+.text-content h2 {
     margin-top: 0;
 }
-.text-content li{
+
+.text-content ul {
+    padding-left: 20px;
+}
+
+.text-content li {
     font-size: 1.2em;
     line-height: 1.4em;
 }
-.text-content .bold{
+
+.text-content .bold {
     font-weight: bold;
 }
-#skills ul{
-    padding-left: 20px;
+
+#skills ul {
+    padding-left: 0;
+    list-style-type: none;
     margin-left: 10px;
     display: grid;
     grid-template-columns: calc(35vw - 15px) calc(35vw - 15px);
 }
-#projects p,#contributions p{
+
+#projects p,
+#contributions p {
     text-align: justify;
     font-size: 1.2em;
     line-height: 1.4em;
 }
-#skills li{
+
+#skills li {
     width: calc(35vw - 15px);
     font-size: 1.2em;
     line-height: 1.8em;
 }
-#projects ul,#contributions ul{
-    list-style-type: none;
+
+#skills img {
+    width: 15px;
+    height: 15px;
 }
-#projects li,#contributions li{
+
+#projects ul,
+#contributions ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#projects li,
+#contributions li {
     text-align: justify;
     font-size: 1.2em;
     line-height: 1.4em;
     margin: 0.8em auto;
 }
-#blog p{
+
+#blog p {
     width: fit-content;
     text-align: justify;
     font-size: 2em;
     font-weight: 500;
 }
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
 footer {
     text-align: center;
+    width: 70vw;
+    padding: 20px 0;
     background-color: var(--sidebar-background-color);
     color: var(--font-color);
+}
+
+/* Media queries starts */
+@media only screen and (max-width: 720px) {
+    body {
+        margin: 0;
+    }
+
+    .body-container {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .body-section {
+        height: fit-content;
+    }
+
+    .body-section h2,
+    #skills h3 {
+        text-align: center;
+    }
+
+    .sidebar-container {
+        display: none;
+        width: 140vw;
+        height: 200vh;
+    }
+
+    .main-body-container {
+        margin-left: 0;
+        width: 100vw;
+    }
+
+    #home>.inline-container>h3>img {
+        margin-left: 400px;
+    }
+
+    .inline-container {
+        display: block;
+    }
+
+    #experience {
+        padding: 0;
+        width: 95vw;
+        margin: 0;
+    }
+
+    #experience .experience-card {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 2em);
+    }
+
+    .experience-card .text-content {
+        padding: 0;
+    }
+
+    .text-content h2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .experience-card img {
+        margin: 0 auto;
+    }
+
+    #skills ul {
+        grid-template-columns: 100%;
+    }
+
+    #skills li {
+        width: auto;
+    }
+
+    #contributions,
+    #projects,
+    #experience .experience-card {
+        margin: 0 5vw;
+        width: 90vw;
+        padding: 0;
+    }
+
+    #experience .experience-card {
+        margin: 5vh 5vw;
+        padding: 5vh 2vw;
+        width: 86vw;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+/* animation class */
+.animationContainer {
+    visibility: hidden;
+    position: relative;
+}
+
+@keyframes scroll-up {
+    0% {
+        bottom: -50px;
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        bottom: 0px;
+        visibility: visible;
+    }
+}
+
+.card-heading-animate {
+    animation: scroll-up 0.5s 1;
+    visibility: visible !important;
 }
