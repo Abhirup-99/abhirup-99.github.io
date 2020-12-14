@@ -18,7 +18,7 @@ $(document).ready(function () {
     if (window.mobileCheck())
         threshold = 0.1;
     else
-        threshold = 0.3;
+        threshold = 0.5;
     const options = {
         root: null,
         threshold: threshold,
@@ -26,7 +26,7 @@ $(document).ready(function () {
     }
     const observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
-            console.log("logging",entry);
+            // console.log("logging",entry);
             if (!entry.isIntersecting)
                 return;
             // console.log("adding class",entry.target);
