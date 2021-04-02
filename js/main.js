@@ -24,7 +24,7 @@ $(document).ready(function () {
   const cards = document.querySelectorAll(".animationContainer");
   let threshold;
   if (window.mobileCheck()) threshold = 0.1;
-  else threshold = 0.5;
+  else threshold = 0.1;
   const options = {
     root: null,
     threshold: threshold,
@@ -34,11 +34,31 @@ $(document).ready(function () {
     entries.forEach((entry) => {
       // console.log("logging",entry);
       if (!entry.isIntersecting) return;
-      // console.log("adding class",entry.target);
+      console.log(entry.target.getAttribute("id"));
+      console.log($(".sidebar-section-links").find(`li[data-nav-section = '${entry.target.getAttribute("id")}']`));
+      $(".sidebar-section-links").find(`li[data-nav-section = '${entry.target.getAttribute("id")}']`).addClass('active');
       entry.target.classList.add("card-heading-animate");
     });
   }, options);
   for (const card of cards) {
     observer.observe(card);
   }
+});
+
+$(document).ready(function () {
+  var currentHash = $(this).attr('id');
+  $(document).scroll(function () {
+      $('.body-section').each(function () {
+          
+          var top = window.pageYOffset;
+          var distance = top - $(this).offset().top;
+          var hash = $(this).attr('id');
+
+          if (distance > -160 && currentHash != hash) {
+            $(".sidebar-section-links").find(`li[data-nav-section ='${hash}']`).addClass('active');
+            $(".sidebar-section-links").find(`li[data-nav-section ='${currentHash}']`).removeClass('active');
+            currentHash = hash;
+          }
+      });
+  });
 });
